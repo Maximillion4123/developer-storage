@@ -1,0 +1,17 @@
+basket = []
+ball = []
+N , M = map(int, input().split())
+for x in range(1, N + 1):
+    basket.append(x)
+    ball.append(x)
+
+for i in range(1, M + 1):
+    a , b = map(int, input().split())
+    c = basket[a-1]
+    d = basket[b-1]
+    basket[a-1] = d
+    basket[b-1] = c
+
+for y in range(len(basket)):
+    print(basket[y],end=' ')
+
