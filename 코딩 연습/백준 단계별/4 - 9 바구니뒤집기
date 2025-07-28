@@ -1,0 +1,16 @@
+N , M = map(int, input().split())
+A = []
+for i in range(N):
+    A.append(i)
+
+for i in range(M):
+    a , b = map(int, input().split())
+    A[a-1 : b] = reversed(A[a-1 : b])
+
+for j in A:
+    print(j+1 , end=" ")
+
+
+
+
+
