@@ -1,0 +1,17 @@
+A = []
+count = 0
+
+for i in range(10):
+    n = int(input())
+    r = n % 42
+    A.append(r)
+
+t = sorted(A)
+for j in range(9):
+    if t[j] != t[j+1]:
+        count += 1
+    else:
+        continue 
+
+print(count + 1)
+
