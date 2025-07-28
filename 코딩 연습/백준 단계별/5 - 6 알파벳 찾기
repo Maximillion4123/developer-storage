@@ -1,0 +1,29 @@
+alphabet = []
+ans = [-1] * 26
+
+for i in range(26):
+    alphabet.append(i+97)
+
+word = list(input())
+word_int = []
+
+for j in range(len(word)):
+    word_int.append(ord(word[j]))
+
+
+for l in range(len(alphabet)):
+    for k in range(len(word_int)):
+        if word_int[k] == alphabet[l]:
+            ans[l] = k
+            break
+        else: 
+            continue
+
+print(' '.join(map(str, ans)))
+
+
+
+
+
+
+    
