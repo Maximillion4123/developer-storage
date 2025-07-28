@@ -1,0 +1,21 @@
+N = int(input())
+A = list(map(int, input().split()))
+M = max(A)
+a =[]
+for i in range(N):
+    a.append(i)
+    a[i] =  A[i] / M * 100
+
+print(sum(a) / N)
+
+
+
+
+    
+
+
+
+
+
+
+
