@@ -1,0 +1,9 @@
+A = ['1'] * 30
+for i in range(28):
+    n = int(input())
+    A[n-1] = '0'
+for i in range(30):
+    if A[i] == '1':
+        print(i+1)
+
+    
