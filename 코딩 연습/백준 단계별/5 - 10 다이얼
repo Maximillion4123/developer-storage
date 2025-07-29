@@ -1,0 +1,30 @@
+N = list(input())
+
+t = []
+for i in range(len(N)):
+    N.append(i)
+    t.append(i)
+    num = ord(N[i])
+    if  65 <= num <= 67:   #ABC  
+        t[i] = 3
+    if  68 <= num <= 70:   #DEF
+        t[i] = 4
+    if  71 <= num <= 73:   #GHI
+        t[i] = 5
+    if  74 <= num <= 76:   #JKL
+        t[i] = 6
+    if  77 <= num <= 79:   #MNO
+        t[i] = 7
+    if  80 <= num <= 83:   #PQRS 
+        t[i] = 8
+    if  84 <= num <= 86:   #TUV
+        t[i] = 9
+    if  87 <= num <= 90:   #WXYZ 
+        t[i] = 10
+   
+
+print(sum(t)) 
+
+
+
+

@@ -1,0 +1,18 @@
+A , B = input().split()
+A_list = list(A)
+B_list = list(B)
+A_list.reverse()
+B_list.reverse()
+a = "".join(A_list)
+b = "".join(B_list)
+int_A = int(a)
+int_B = int(b)
+
+print(max(int_A , int_B))
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+N = int(input())
+
+for i in range(N):
+    R , S = input().split()
+    R_int = int(R)
+    S_list = list(S)
+    for j in range(len(S_list)):
+        S_list.append(j)
+        print(S_list[j] * R_int, end='')
+    print("")
+    
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    
+
+
+
+
+
+
+
+
+
+
