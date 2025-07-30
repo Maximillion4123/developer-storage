@@ -1,0 +1,6 @@
+n = int(input())
+n_ = 2*n - 1
+for i in range(n_):
+    cnt = n_ - abs(i - n_ // 2) * 2
+    string = f"{'*' * cnt:^{n_}}".rstrip()
+    print(string)

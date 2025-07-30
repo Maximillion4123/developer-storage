@@ -1,0 +1,14 @@
+A = list(input())
+n = len(A)
+if A == A[::-1]:
+    print('1')
+else: 
+    print('0')
+
+    
+
+
+        
+
+
+
